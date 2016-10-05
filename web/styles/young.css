@@ -1,0 +1,114 @@
+/*Copyright © 2016 Lane Peeler & Nathan Young*/
+
+* {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Body */
+
+body {
+  margin: 1em auto;
+  width: 700px;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+header #h-div {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+header #address, header #bullet, header #contact {
+  display: initial;
+}
+
+/* Main/Content */
+
+h2 {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  margin-top: 0.6em;
+  text-decoration: underline;
+}
+
+p, ul {
+  margin: 0;
+}
+
+.date-501 {
+  float: right;
+}
+
+.date-500 {
+  display: none;
+}
+
+.outer {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.inner {
+  list-style-type: disc;
+}
+
+.red {
+  color: red;
+}
+
+.li-2 {
+  margin-top: 0.8em;
+}
+
+.eu {
+  display: inline-block;
+}
+
+/* Media Queries*/
+
+@media only screen and (max-width: 860px) {
+  html {
+    margin: 0 10%;
+  }
+  
+  body {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+   header #h-div {
+    display: block;
+    flex-wrap: nowrap;
+  }
+  
+  header #bullet {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .date-501 {
+    display: none;
+  }
+  
+  .date-500 {
+    display: inline-block;
+  }
+  
+  .eu {
+    display: none;
+  }
+}
